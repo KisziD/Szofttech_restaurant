@@ -9,22 +9,26 @@ class User
 {
 private:
 
-	string name, email, phone, userName, password;
+	string name, email, phone, username, password;
 	bool admin;
 	vector<Reservation> reservations;
 
 public:
 
 	User(string n, string e, string p, string u, string pass, bool a);
-	string getName();
+	User(vector<string> udata,bool a);
+	string getName() const;
 	void setName(string n);
-	string getEmail();
+	string getEmail() const;
 	void setEmail(string e);
-	string getPhone();
+	string getPhone() const;
 	void setPhone(string p);
-	string getUName();
+	string getUname() const;
 	void setUName(string u);
-	bool getAdmin();
+	string getPassword() const;
+	void setPassword(string p);
+	bool getAdmin() const;
 	void setAdmin(bool a);
+	void newReservation(vector<string> res);
 };
 
