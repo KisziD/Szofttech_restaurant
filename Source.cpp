@@ -4,7 +4,7 @@
 
 int main() {
 
-	vbhjvmj
+
 	return 0;
 
 }
