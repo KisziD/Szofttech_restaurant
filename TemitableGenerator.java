@@ -10,7 +10,7 @@ class TimetableGenerator{
             int count=0;
             while(time<1637056801){
                 if(count<7){
-                    fw.write(time+";false;false;false;false;false;false\n");
+                    fw.write(time+"!false;false;false;false;false;false\n");
                     time+=7200;
                     count++;
                 }else if(count==7){
